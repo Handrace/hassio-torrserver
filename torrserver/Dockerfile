@@ -5,11 +5,8 @@ FROM $BUILD_FROM
 COPY rootfs /
 RUN chmod a+x /run.sh
 
-# Install deps
-RUN apk add --no-cache \
-    coreutils=9.1-r0 \
-    wget=1.21.4-r0
-
+# Setup base
+RUN apk add --no-cache 
 
 # Build arguments
 ARG BUILD_ARCH
@@ -36,7 +33,7 @@ LABEL \
     org.opencontainers.image.vendor="TorrServer Home Assistant addon" \
     org.opencontainers.image.authors="Aleksandr Trubilin <aatrubilin@gmail.com>" \
     org.opencontainers.image.licenses="MIT" \
-    org.opencontainers.image.url="https://github.com/aatrubilin/hassio-torrserver" \
+    org.opencontainers.image.url="https://github.com/Handrace/hassio-torrserver" \
     org.opencontainers.image.source="https://github.com/${BUILD_REPOSITORY}" \
     org.opencontainers.image.documentation="https://github.com/${BUILD_REPOSITORY}/blob/main/README.md" \
     org.opencontainers.image.created=${BUILD_DATE} \
