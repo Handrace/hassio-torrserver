@@ -3,7 +3,7 @@ name: TorrServer
 version: 0.2.7
 slug: torrserver
 description: TorrServer for home assistant
-url: https://github.com/aatrubilin/hassio-torrserver
+url: https://github.com/Handrace/hassio-torrserver
 codenotary: aatrubilin@gmail.com
 webui: http://[HOST]:[PORT:8090]
 init: false
